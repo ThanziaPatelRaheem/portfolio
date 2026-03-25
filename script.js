@@ -13,6 +13,8 @@ openButton.addEventListener("click", () => {
   header.classList.add("nav-open");
 });
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 const DUR = 1200;
 const HEADER_H = 56;
 
