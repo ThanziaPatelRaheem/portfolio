@@ -77,6 +77,9 @@ body {
 .hero-sub {
   font-size: 1rem;
 }
+.hero-sub-des {
+  font-weight: 600;
+}
 
 .about-title,
 .skills-title {
@@ -473,7 +476,7 @@ header.nav-open .nav {
 }
 
 .project-card:hover {
-  transform: translateY(-25px);
+  transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -495,6 +498,32 @@ header.nav-open .nav {
   object-position: center;
   border-radius: 6px;
 }
+
+/* Kanban Board screenshot scroll animation */
+
+.project-image-scroll-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  container-type: inline-size;
+}
+
+.project-image-scroll {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 5s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-image-scroll {
+    transition: none;
+  }
+}
+
 /* ===================================================================
                            CONTACT
 ====================================================================== */
@@ -772,12 +801,10 @@ footer {
     font-weight: 500;
   }
   .projects-wrapper {
-    grid-column: 2/-2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-column-gap: 1em;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
     width: 100%;
-
     grid-row-gap: 2em;
   }
   .project-card {
@@ -916,5 +943,55 @@ footer {
   }
   .contact-box {
     grid-column: 2/4;
+  }
+}
+
+/* ===================================
+   PROJECT CARDS - DESKTOP LAYOUT
+=================================== */
+
+@media (min-width: 1200px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+/* ===================================
+   KANBAN IMAGE SCROLL
+=================================== */
+
+.project-image-scroll-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  container-type: inline-size;
+}
+
+.project-image-scroll {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 5s ease-in-out;
+}
+
+/* Hover anywhere on the Kanban card */
+.project-card:hover .project-image-scroll {
+  transform: translateY(min(0px, calc(100cqw * 9 / 16 - 100%)));
+}
+
+/* Subtle card hover */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .project-image-scroll {
+    transition: none;
   }
 }

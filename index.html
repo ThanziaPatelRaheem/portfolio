@@ -42,16 +42,30 @@
     </header>
     <main>
         <section id="home" class="hero main-grid">
+
             <div class="hero-col-1">
-                <h1 class="hero-title">Hi, I'm <span class="accent-color">Thanzia</span>, a
-                    Full-Stack Developer</h1>
-                <p class="hero-sub">MERN Stack • Docker • GitHub Actions CI/CD • AWS EC2 </p>
-                <p class="hero-sub">Building production-ready web
-                    applications from clean frontends to cloud deployments. Always learning, always exploring new
-                    technologies</p>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="accent-color">Thanzia</span>,
+                    a Full-Stack Developer
+                    <span> | AI Integration</span>
+                </h1>
+
+                <p class="hero-sub-des">
+                    MERN Stack • OpenAI API • Docker • GitHub Actions CI/CD • AWS EC2
+                </p>
+
+                <p class="hero-sub">
+                    I build practical, user-friendly full-stack web applications,
+                    with a particular focus on integrating AI capabilities
+                    into real-world solutions. I enjoy bringing together
+                    frontend, backend, and cloud technologies to turn
+                    ideas into functional applications.
+                </p>
 
                 <a href="#projects" class="btn-primary">Projects</a>
             </div>
+
+
             <div class="hero-col-2">
                 <div class="hero-art my-element" aria-hidden="true">
                     <svg width="700" height="750" version="1.1" viewBox="0 0 574.18 524.06"
@@ -75,21 +89,38 @@
         <hr class="section-divider">
         <section id="about" class="about main-grid">
             <div class="about-wrapper">
+
                 <div class="about-me">
                     <h2 class="about-title">About me</h2>
-                    <p class="about-info">I'm a <strong>Full Stack Developer</strong> with a strong
-                        MERN stack foundation, always keen to pick up new technologies as projects demand.
-                        I build production-ready applications end-to-end — from clean frontend interfaces
-                        to scalable backend systems with real cloud deployments using
-                        <strong>Docker</strong>, <strong>GitHub Actions CI/CD</strong>, and
-                        <strong>AWS EC2</strong>.
-                        Connect with me on
-                        <a href="https://www.linkedin.com/in/thanzia" target="_blank" rel="noopener">LinkedIn</a> —
-                        I'm <strong>open to opportunities</strong> where I can contribute to real products,
-                        keep learning quickly, and grow with a collaborative team.
-                        Next step: learning AI and building AI-powered web applications.
+
+                    <p class="about-info">
+                        I'm a <strong>Full Stack Developer</strong> with a strong
+                        foundation in the <strong>MERN stack</strong> and a passion
+                        for building practical, user-friendly web applications.
+
+                        I enjoy solving problems, exploring new technologies,
+                        and turning ideas into functional solutions.
+                        I believe in <strong>learning by doing</strong> and
+                        continuously improving my skills through hands-on development.
+
+                        I'm particularly interested in <strong>AI integration</strong>
+                        and exploring how AI capabilities can be incorporated into
+                        real-world applications to create smarter, more useful
+                        user experiences. I also enjoy working across frontend,
+                        backend, and <strong>cloud technologies</strong> to
+                        understand the complete application development process.
+
+                        I'm <strong>open to junior developer opportunities</strong>
+                        where I can contribute to meaningful products, collaborate
+                        with experienced developers, and continue growing
+                        professionally.
+
+                        Feel free to connect with me on
+                        <a href="https://www.linkedin.com/in/thanzia" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>.
                     </p>
                 </div>
+
                 <div id="skills" class="skills">
                     <h2 class="skills-title">Skills</h2>
                     <ul class="skills-list">
@@ -136,7 +167,17 @@
                         <li class="skills-item">
                             <img src="./assets/icons/adobe.svg" alt="" width="24" height="24" loading="lazy"
                                 decoding="async">
-                            <span class="item-info">Adobe Photoshop</span>
+                            <span class="item-info">GitHub Actions</span>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/icons/aws.svg" alt="" width="26" height="26" loading="lazy"
+                                decoding="async">
+                            <span class="item-info">AWS EC2</span>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/icons/rest-api.svg" alt="" width="26" height="26" loading="lazy"
+                                decoding="async">
+                            <span class="item-info">REST APIs</span>
                         </li>
                         <li class="skills-item">
                             <img src="./assets/icons/docker.svg" alt="" width="26" height="26" loading="lazy"
@@ -156,96 +197,155 @@
 
         </section>
         <hr class="section-divider">
+
         <section id="projects" class="projects main-grid">
             <div class="project-content-wrapper">
                 <h2 class="heading">Projects</h2>
+
                 <p class="tagline cta-text">
                     Featured applications, driven by continuous learning.<br>
                     For more projects and code,
-                    <a href="https://github.com/ThanziaPatelRaheem" target="_blank" class="github-link">
+                    <a href="https://github.com/ThanziaPatelRaheem" target="_blank" rel="noopener noreferrer"
+                        class="github-link">
                         visit my GitHub profile.
                     </a>
                 </p>
-                <p></p>
-                <div class="projects-wrapper">
-                    <article class="project-card card-1">
 
-                        <img src="./assets/images/appetite.png" alt="project-image" class="project-image">
-                        <h2 class="project-title">Appetite</h2>
-                        <p class="project-info"> Responsive <strong>React</strong> recipe app with
-                            <strong>Firebase</strong>
-                            backend for auth,
-                            data,
-                            and
-                            image storage.
-                            Users can <strong>search & filter</strong>, upload recipe images. Built with
-                            lazy loading,
-                            clean forms, and accessible UI states.
+                <div class="projects-wrapper">
+
+                    <!-- WanderAI -->
+                    <article class="project-card card-1">
+                        <img src="./assets/images/wanderai.png" alt="WanderAI AI travel itinerary planner"
+                            class="project-image" loading="lazy" />
+
+                        <h2 class="project-title">WanderAI — AI Travel Planner</h2>
+
+                        <p class="project-info">
+                            Full-stack AI travel planner featuring
+                            <strong>streaming itinerary generation</strong>
+                            and a <strong>RAG-powered travel assistant</strong>
+                            using OpenAI and Supabase vector search.
+                            Deployed on <strong>AWS EC2</strong> with Docker,
+                            GitHub Actions CI/CD, and HTTPS.
                         </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ThanziaPatelRaheem/WanderAI" target="_blank"
+                                rel="noopener noreferrer" aria-label="WanderAI GitHub repository" class="repo-link">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>Repo</span>
+                            </a>
+
+                            <a href="https://wanderai.duckdns.org" target="_blank" rel="noopener noreferrer"
+                                aria-label="WanderAI live application" class="repo-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span>Live</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Grocerly -->
+                    <article class="project-card card-2">
+                        <div class="project-image-scroll-container">
+                            <img src="./assets/images/grocerly.png" alt="Grocerly e-commerce application"
+                                class="project-image-scroll" loading="lazy" />
+                        </div>
+
+                        <h2 class="project-title">Grocerly — E-Commerce App</h2>
+
+                        <p class="project-info">
+                            Full-stack <strong>MERN</strong> grocery store with
+                            <strong>JWT authentication</strong>,
+                            <strong>Stripe payments</strong>,
+                            <strong>Cloudinary</strong> image management,
+                            sales analytics dashboard, and order management.
+                            Built with <strong>Redux Toolkit</strong> and
+                            RTK Query. Deployed on Vercel and Render.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ThanziaPatelRaheem/grocerly" target="_blank"
+                                rel="noopener noreferrer" aria-label="Grocerly GitHub repository" class="repo-link">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>Repo</span>
+                            </a>
+
+                            <a href="https://grocerly-flax.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Grocerly live application" class="repo-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span>Live</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Kanban Board -->
+                    <article class="project-card card-3">
+                        <div class="project-image-scroll-container">
+                            <img src="./assets/images/kanban-board.png" alt="Real-time Kanban task management board"
+                                class="project-image-scroll" loading="lazy" />
+                        </div>
+
+                        <h2 class="project-title">Real-Time Kanban Board</h2>
+
+                        <p class="project-info">
+                            Full-stack task management application featuring
+                            <strong>drag-and-drop task organization</strong>,
+                            workflow progress tracking, and
+                            <strong>real-time updates</strong> using
+                            WebSockets and Socket.IO.
+                            Built with React, Node.js, and Express.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ThanziaPatelRaheem" target="_blank" rel="noopener noreferrer"
+                                aria-label="Kanban Board GitHub Repository" class="repo-link">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>Repo</span>
+                            </a>
+                            <a href="https://realtime-kanban-board-five.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub profile" class="repo-link">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>Live</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Appetite -->
+                    <article class="project-card card-4">
+                        <img src="./assets/images/appetite.png" alt="Appetite recipe application" class="project-image"
+                            loading="lazy" />
+
+                        <h2 class="project-title">Appetite</h2>
+
+                        <p class="project-info">
+                            Responsive <strong>React</strong> recipe app with
+                            <strong>Firebase</strong> backend for authentication,
+                            data, and image storage.
+                            Users can <strong>search and filter</strong>
+                            recipes and upload recipe images.
+                            Built with lazy loading, clean forms,
+                            and accessible UI states.
+                        </p>
+
                         <div class="project-links">
                             <a href="https://github.com/ThanziaPatelRaheem/appetite" target="_blank"
-                                aria-label="Github Repo" class="repo-link">
+                                rel="noopener noreferrer" aria-label="Appetite GitHub repository" class="repo-link">
                                 <i class="fa-brands fa-square-github"></i>
                                 <span>Repo</span>
                             </a>
+
                             <a href="https://thanziapatelraheem.github.io/appetite/" target="_blank"
-                                aria-label="Github Repo" class="repo-link">
-                                <i class="fa-brands fa-square-github"></i>
+                                rel="noopener noreferrer" aria-label="Appetite live application" class="repo-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 <span>Live</span>
                             </a>
                         </div>
-
                     </article>
-                    <article class="project-card card-2">
-                        <img src="./assets/images/student-portal.png" alt="project-image" class="project-image">
-                        <h2 class="project-title">Student Portal</h2>
-                        <p>
-                            A <strong>Dockerized MERN</strong> student management app built to learn
-                            containerization and cloud deployment. Features <strong>Docker Compose</strong>
-                            multi-container setup, <strong>Nginx</strong> for serving the React build,
-                            and an automated <strong>GitHub Actions CI/CD</strong> pipeline that deploys
-                            to <strong>AWS EC2</strong> on every push.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/ThanziaPatelRaheem/student-portal" target="_blank"
-                                aria-label="Github Repo" class="repo-link">
-                                <i class="fa-brands fa-square-github"></i>
-                                <span>Repo</span>
-                            </a>
-                            <a href="http://16.176.168.183" target="_blank" aria-label="Github Repo" class="repo-link">
-                                <i class="fa-brands fa-square-github"></i>
-                                <span>Live</span>
-                            </a>
-                        </div>
 
-                    </article>
-                    <article class="project-card card-3">
-                        <img src="./assets/images/grocerly.png" alt="project-image" class="project-image">
-                        <h2 class="project-title">Grocerly — E-Commerce App</h2>
-                        <p>
-                            Production-ready full-stack <strong>MERN</strong> grocery store with
-                            <strong>JWT auth</strong>, <strong>Stripe payments</strong>,
-                            <strong>Cloudinary</strong> image management, sales analytics dashboard,
-                            and order management. Built with <strong>Redux Toolkit</strong> and
-                            RTK Query for state management. Deployed on Vercel and Render.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/ThanziaPatelRaheem/grocerly?tab=readme-ov-file" target="_blank"
-                                aria-label="Github Repo" class="repo-link">
-                                <i class="fa-brands fa-square-github"></i>
-                                <span>Repo</span>
-                            </a>
-                            <a href="https://grocerly-flax.vercel.app/" class="repo-link" target="_blank"
-                                aria-label="Github Repo">
-                                <i class="fa-brands fa-square-github"></i>
-                                <span>Live</span>
-                            </a>
-                        </div>
-
-                    </article>
                 </div>
-
+            </div>
         </section>
+
         <hr class="section-divider">
         <section id="contact" class="contact main-grid">
             <div class="contact-wrapper">
