@@ -995,3 +995,7 @@ footer {
     transition: none;
   }
 }
+/* Slow down WanderAI screenshot scrolling */
+.card-1 .project-image-scroll {
+  transition-duration: 10s;
+}
