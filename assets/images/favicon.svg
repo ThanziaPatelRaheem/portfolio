@@ -1,0 +1,27 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64">
+
+  <!-- Navy background -->
+  <rect
+    width="64"
+    height="64"
+    rx="9"
+    fill="#172033"
+  />
+
+  <!-- Sharp geometric TZ -->
+  <g fill="#FFB401">
+
+    <!-- Stylized T -->
+    <path
+      d="M5 15 H33 L28 23 H23 V49 H14 V23 H5 Z"
+    />
+
+    <!-- Stylized Z -->
+    <path
+      d="M36 15 H59 V22 L45 41 H59 L54 49 H33 V42 L47 23 H36 Z"
+    />
+
+  </g>
+</svg>
