@@ -997,5 +997,31 @@ footer {
 }
 /* Slow down WanderAI screenshot scrolling */
 .card-1 .project-image-scroll {
-  transition-duration: 10s;
+  transition-duration: 16s;
+}
+/* Haunted Repo screenshot scrolling */
+.card-2 .project-image-scroll {
+  transition-duration: 16s;
+}
+/* Expand all scrolling project screenshots on hover */
+.project-card {
+  position: relative;
+}
+
+.project-image-scroll-container {
+  transition:
+    transform 10s ease,
+    box-shadow 0.4s ease;
+  transform-origin: top center;
+}
+
+@media (min-width: 768px) {
+  .project-card:hover {
+    z-index: 10;
+  }
+
+  .project-card:hover .project-image-scroll-container {
+    transform: scale(1.35);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  }
 }
